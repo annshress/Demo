@@ -1,0 +1,59 @@
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins/common";
+
+.container-add-booking{
+  .employee_form{
+    background-color: $color-white;
+    padding: 0 !important;
+
+    .btn-service-booking{
+      svg.icon-service-booking{
+        @include svgIcons($color-primary);
+      }
+
+      &:hover{
+        svg.icon-service-booking {
+          @include svgIcons($color-white);
+        }
+      }
+    }
+
+    .form-fields{
+      margin-bottom: 0 !important;
+    }
+
+    .row-booking_detail{
+      margin-top: 10px !important;
+
+      h6{
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      p{
+        margin-bottom: 0 !important;
+      }
+    }
+
+    .row-service-bookings{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-bottom: 8px !important;
+
+      &:nth-child(even){
+        background-color: $background-color-primary;
+      }
+
+      .start-time{
+        margin-top: 10px;
+      }
+    }
+
+    .booking-date{
+      margin-top: 10px !important;
+    }
+
+    .service-row{
+      margin-top: 25px;
+    }
+  }
+}
