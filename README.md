@@ -1,4 +1,4 @@
-DNS hosted on Cloudfare... seems like subscription expired
+DNS hosted on Cloudflare... seems like subscription expired
 
 However, elasticbeanstalk link still works
 
