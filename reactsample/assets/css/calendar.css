@@ -1,0 +1,23 @@
+.donut-chart-legend strong {
+  display: inline-block;
+  width: 40px;
+  height: 12px;
+  margin-bottom: -1px;
+  margin-right: 2px;
+}
+.donut-color-1 {
+  background-color: #5ac5b6;
+}
+.donut-chart-legend span {
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 10px;
+}
+.donut-color-2 {
+  background-color: #fbc994;
+}
+.red-bg,
+.bg-danger {
+  background-color: #ed5565;
+  color: #ffffff;
+}

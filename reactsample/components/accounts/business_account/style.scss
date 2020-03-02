@@ -1,0 +1,41 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins/common";
+
+.container-business-settings{
+  img{
+    &.profile{
+      width: auto;
+      height: 100px;
+    }
+
+    &.icon-secure{
+      width: 20px;
+      margin-right: 20px;
+    }
+
+    &.logo{
+      width: 150px;
+      height: auto;
+    }
+
+    &.avatar{
+      width: 60px;
+      height: auto;
+    }
+  }
+
+  .personal-info{
+    span{
+      background-color: $color-white;
+
+      &.label {
+        width: 110px;
+        font-weight: 600;
+      }
+    }
+
+    input{
+      background-color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../../assets/scss/variables";
+
+.container-add-account{
+  .employee_form{
+    textarea{
+      height: 250px !important;
+    }
+
+    .row-bottom-divider{
+      .divider{
+        height: 5px !important;
+      }
+    }
+  }
+}

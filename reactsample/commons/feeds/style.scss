@@ -1,0 +1,198 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins/common";
+
+@mixin iconLove($color){
+  @include svgIcons($color);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+@mixin containerLove($top,$left,$width,$height,$fontSize,$paddingLeft){
+  display: inline;
+  position: relative;
+
+  .love-count{
+    position: absolute;
+    top: $top;
+    left: $left;
+    background-color: $color-primary;
+    color: $color-white;
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    padding-left: $paddingLeft;
+    font-size: $fontSize;
+    cursor: pointer;
+  }
+}
+
+.container-feeds {
+  .employee_form{
+    textarea{
+      height: 100px !important;
+    }
+
+    .all-feeds{
+      margin-right: 10px;
+    }
+  }
+
+  svg.icon-load-more{
+    @include svgIcons($color-white);
+  }
+
+  .feed-card{
+    img{
+      &.app-type{
+        width: 50px;
+      }
+
+      &.person{
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+
+    .display-name{
+      font-size: .9rem;
+      font-weight: 500;
+      color: $color-black-2;
+      margin-bottom: 10px;
+    }
+
+    .display-verb{
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-black-2;
+      margin-bottom: 10px;
+    }
+
+    .publish-date{
+      display: inline-block;
+      padding: 1px 5px;
+      border: 1px solid $color-black-5;
+      border-radius: 2px;
+      font-size: .8rem;
+      color: $color-black-3;
+
+      .left{
+        padding-right: 7px;
+        border-right: 1px solid $color-black-5;
+      }
+
+      .right{
+        padding-left: 7px;
+      }
+    }
+
+    svg{
+      &.disabled{
+        pointer-events: none;
+
+        &.icon-action{
+          @include iconLove($color-black-3);
+        }
+      }
+
+      &.icon-publish-date{
+        @include svgIcons($color-primary);
+      }
+
+      &.icon-action{
+        @include iconLove($color-primary);
+      }
+
+      &.icon-is-loved{
+        @include iconLove($color-primary);
+      }
+
+      &.icon-feed{
+        @include svgIcons($color-primary);
+        margin-top: -3px;
+      }
+    }
+  }
+
+  .form-add-comment{
+    width: 100%;
+  }
+
+  .container-comment{
+    .row-comment{
+      border-top: 1px solid $color-black-5;
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+
+      &:not(:first-child){
+        border-bottom: 1px solid $color-black-5;
+      }
+
+      .comment{
+        font-size: .8rem;
+        color: $color-black-2;
+        margin-bottom: 10px;
+
+        .name{
+          font-weight: 500;
+          margin-right: 5px;
+        }
+
+        .create-date{
+          margin-top: 5px;
+          color: $color-black-3;
+        }
+      }
+
+      .show-all{
+        color: $color-primary;
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: 500;
+      }
+    }
+
+    svg{
+      &.disabled{
+        pointer-events: none;
+
+        &.icon-comment-action{
+          @include iconLove($color-black-3);
+          margin-right: 5px;
+        }
+      }
+
+      &.icon-comment-action{
+        @include svgIcons($color-primary);
+        cursor: pointer;
+        margin-right: 5px;
+      }
+
+      &.icon-is-loved{
+        @include svgIcons($color-primary);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container-create-comment{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    .error-comment{
+      display: block;
+      color: $color-primary;
+      margin-top: -10px !important;
+      margin-left: 5px !important;
+    }
+  }
+}
+
+.container-love{
+  @include containerLove(-6px,22px,15px,15px,.7rem,6px);
+}
+
+.container-comment-love{
+  @include containerLove(-6px,15px,12px,12px,.6rem,3px);
+}
+

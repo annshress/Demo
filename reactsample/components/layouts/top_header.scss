@@ -1,0 +1,29 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins/common";
+
+.top-header {
+  background: $color-black-1 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 76px !important;
+
+  .user_box {
+    padding-top: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .user_img {
+      margin-right: 15px;
+////////////////////////////
+//                        //
+//      TRUNCATED         //
+//                        //
+////////////////////////////
+
+      &::placeholder{
+        color: $color-white;
+      }
+    }
+  }
+}

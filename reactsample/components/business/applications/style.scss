@@ -1,0 +1,88 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins/common";
+
+.container-business-application{
+  h3{
+    text-transform: uppercase;
+  }
+
+  .search-box{
+    margin-top: 8px;
+    text-align: center;
+
+    input[type="text"]{
+      background: $color-white;
+      border: 1px solid $color-black-5;
+      width: 100%;
+      padding: 9px 5%;
+      border-radius: 25px;
+      color: $color-black-3;
+      text-align: left;
+      outline: none;
+
+      &::placeholder{
+        color: $color-black-3;
+      }
+    }
+  }
+
+  .row-application{
+    background: $color-white;
+    margin: 14px 0;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: $color-black-3;
+    font-size: 1rem;
+    border: 1px solid $color-black-5;
+
+    .btn-view-app{
+      margin-right: 5px;
+    }
+
+    .btn-app-active{
+      padding: 1px 1px 1px 2px;
+      display: inline-block;
+      font-size: 1.2rem;
+      border-radius: 100%;
+    }
+
+    .app-logo{
+      width: 30px;
+    }
+  }
+
+  .row-top-cat-header{
+    margin-bottom: 15px;
+  }
+
+  .row-top-category{
+    background: $color-white;
+    margin: 5px 0;
+    padding: 5px 0;
+    color: $color-black-2;
+    font-size: 1rem;
+    border: 1px solid $color-black-5;
+    cursor: pointer;
+
+    .col-12{
+      padding-left: 5px !important;
+    }
+  }
+
+  svg.icon-plus{
+    @include svgIcons($color-white);
+  }
+
+  svg.icon-minus{
+    @include svgIcons($color-white);
+  }
+
+  svg.icon-view-app{
+    @include svgIcons($color-white);
+  }
+
+  svg.icon-fav{
+    @include svgIcons($color-primary);
+    margin-right: 10px;
+  }
+}

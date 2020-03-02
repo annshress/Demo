@@ -1,0 +1,17 @@
+@import "../../assets/scss/variables";
+
+.page-title {
+  padding: 15px 0 5px;
+  background-color: $color-white;
+  position: relative;
+  z-index: 0;
+
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h3 {
+    margin-bottom: 15px;
+  }
+}

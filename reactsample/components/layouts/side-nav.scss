@@ -1,0 +1,33 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins/common";
+@import "../../assets/scss/mixins/nav";
+
+.col-side-nav{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.container-sidenav{
+  background-color: $color-primary !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: calc(100vh - 76px);
+  box-shadow: 1px 1px 5px $color-black-5;
+  z-index: 1000;
+
+  .container-logo-app-sch{
+    @include appLogo(100%);
+  }
+
+  .container-logo-crm{
+    @include appLogo(45px);
+  }
+
+////////////////////////////
+//                        //
+//      TRUNCATED         //
+//                        //
+////////////////////////////

@@ -1,0 +1,30 @@
+@import "../../assets/scss/variables";
+
+.container-stripe{
+  .header{
+    margin-bottom: 20px !important;
+  }
+
+  label{
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  .card-element{
+    margin-bottom: 15px !important;
+  }
+}
+
+
+.container-authorized{
+  .header{
+    margin-bottom: 20px !important;
+  }
+
+  input{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins/common";
+
+.container-options-notifications{
+  svg.icon-notification{
+    @include svgIcons($color-white);
+  }
+
+  .alert{
+    &.alert-secondary{
+      border-left: none !important;
+      border-right: none !important;
+    }
+  }
+
+  .material-radio{
+    margin-top: 0 !important;
+  }
+
+  .col-message-type, .col-recipient-type, .col-status-button{
+    height: 47px !important;
+  }
+
+  .card-token {
+    .token_list {
+      padding: 30px;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: inline-block;
+          width: 47%;
+          padding: 5px 0;
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
