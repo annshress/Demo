@@ -1,0 +1,11 @@
+[
+  {"model": "accounts.Question", "pk": 1, "fields": {"question_text": "Your mother's maiden name"}},
+  {"model": "accounts.Question", "pk": 2, "fields": {"question_text": "Your first pet's name"}},
+  {"model": "accounts.Question", "pk": 3, "fields": {"question_text": "The name of your elementary school"}},
+  {"model": "accounts.Question", "pk": 4, "fields": {"question_text": "Your elementary school mascot"}},
+  {"model": "accounts.Question", "pk": 5, "fields": {"question_text": "Your best friend's nickname"}},
+  {"model": "accounts.Question", "pk": 6, "fields": {"question_text": "Your favourite sports team"}},
+  {"model": "accounts.Question", "pk": 7, "fields": {"question_text": "Your favourite writer"}},
+  {"model": "accounts.Question", "pk": 8, "fields": {"question_text": "Your favourite actor"}},
+  {"model": "accounts.Question", "pk": 9, "fields": {"question_text": "Your favourite singer"}}
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$120000$HAbxYPk8azCN$HVEUjOTSmTNeTvLH73TluTrMRzwrFf1KIPBwGE+KJgc=",
+      "last_login": "2018-10-23T18:55:02.297Z",
+      "is_superuser": false,
+      "username": "anish",
+      "first_name": "",
+      "last_name": "",
+      "email": "django@...",
+      "is_active": true,
+      "date_joined": "2018-10-23T18:54:38.866Z",
+      "created": "2018-10-23T18:54:38.866Z",
+      "is_staff": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

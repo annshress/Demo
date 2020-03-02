@@ -1,0 +1,19 @@
+{% load static %}
+
+<!-- chat/templates/chat/room.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Online Or Not?</title>
+    <script type="application/javascript" src={% static "custom/online_status.js" %}></script>
+</head>
+<body>
+    Check the console.
+    {% for i in n %}
+        <div id="emp{{ i }}" style="background-color: grey">
+            Employee {{ i }}
+        </div>
+    {% endfor %}
+</body>
+</html>

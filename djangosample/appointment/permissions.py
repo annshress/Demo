@@ -24,54 +24,10 @@ class WorkingTimePermission(BasePermission):
     message = "You do not have enough privileges on Working Time Menu."
 
     def has_permission(self, request, view):
-        if getattr(view, 'action', None):
-            if view.action in ["list", "retrieve"]:
-                return request.user.has_perm('appointment.view_workingtime')
-            elif view.action in ["create"]:
-                return request.user.has_perm('appointment.add_workingtime')
-            elif view.action in ["update", "partial_update"]:
-                return request.user.has_perm('appointment.change_workingtime')
-            elif view.action in ["destroy"]:
-                return request.user.has_perm('appointment.delete_workingtime')
-            print("action not registered in workingtime permissions")
-        else:
-            mapper = {
-                "OPTIONS": 'appointment.view_workingtime',
-                "GET": 'appointment.view_workingtime',
-                "POST": 'appointment.add_workingtime',
-                "PUT": 'appointment.change_workingtime',
-                "PATCH": 'appointment.change_workingtime',
-                "DELETE": 'appointment.delete_workingtime',
-            }
-            return request.user.has_perm(mapper.get(request.method))
-        return False
-
-
-class CustomDatePermission(BasePermission):
-    message = "You do not have enough privileges on Custom Working Time Menu."
-
-    def has_permission(self, request, view):
-        if getattr(view, 'action', None):
-            if view.action in ["list", "retrieve"]:
-                return request.user.has_perm('appointment.view_customdate')
-            elif view.action in ["create"]:
-                return request.user.has_perm('appointment.add_customdate')
-            elif view.action in ["update", "partial_update"]:
-                return request.user.has_perm('appointment.change_customdate')
-            elif view.action in ["destroy"]:
-                return request.user.has_perm('appointment.delete_customdate')
-            print("action not registered in custom times permissions")
-        else:
-            mapper = {
-                "OPTIONS": 'appointment.view_customdate',
-                "GET": 'appointment.view_customdate',
-                "POST": 'appointment.add_customdate',
-                "PUT": 'appointment.change_customdate',
-                "PATCH": 'appointment.change_customdate',
-                "DELETE": 'appointment.delete_customdate',
-            }
-            return request.user.has_perm(mapper.get(request.method))
-        return False
+        
+        #############
+        # TRUNCATED #
+        #############
 
 
 class ServiceMenuPermission(BasePermission):
@@ -113,21 +69,8 @@ class ReportMenuPermission(BasePermission):
 
     def has_permission(self, request, view):
         return request.user.has_perm('appointment.access_report')
+        
+        #############
+        # TRUNCATED #
+        #############
 
-
-class RoleMenuPermission(BasePermission):
-    message = "You do not have enough privileges on Role Menu."
-
-    def has_permission(self, request, view):
-        if view.action in ["reset_permissions"]:
-            self.message = "You do not have enough privileges to Reset"
-            return request.user.has_perm('appointment.reset_permissions')
-        return request.user.has_perm('appointment.view_appointmentuser')
-
-
-class AlterUserPermission(BasePermission):
-    message = "You do not have enough privileges to set user permissions."
-
-    def has_permission(self, request, view):
-        return request.user.has_perm('appointment.view_appointmentuser') and \
-               request.user.has_perm('appointment.set_permissions')

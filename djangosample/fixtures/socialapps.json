@@ -1,0 +1,1 @@
+[{"model": "socialaccount.socialapp", "pk": 1, "fields": {"provider": "google", "name": "google", "client_id": "...", "secret": "...=L:lVgnYO5]nQ[E2mAiua", "key": "", "sites": [1]}}]

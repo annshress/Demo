@@ -1,0 +1,18 @@
+[
+  {
+    "model": "appointment.role",
+    "pk": 1,
+    "fields": {
+      "name": "administrator",
+      "status": true
+    }
+  },
+  {
+    "model": "appointment.role",
+    "pk": 2,
+    "fields": {
+      "name": "regular",
+      "status": true
+    }
+  }
+]

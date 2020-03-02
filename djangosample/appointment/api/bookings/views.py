@@ -48,25 +48,11 @@ class AdminBookingModelViewSet(CompanyPermissionCheckMixin,
                                AppointmentAppCheckMixin,
                                SetCompanySerializerMixin,
                                viewsets.ModelViewSet):
-    serializer_class = BookingModelSerializer
-    queryset = Booking.objects.all()
-    search_fields = ['booking_id', 'client__name', 'client__email', 'service_bookings__service__name']
-    filterset_class = BookingFilter
-    permission_classes = [BookingMenuPermission]
+        
+        #############
+        # TRUNCATED #
+        #############
 
-    # todo bulk delete view
-
-    def get_serializer_class(self):
-        if self.action == "list":
-            return BookingModelMinimalSerializer
-        if self.action == "export":
-            return EmptySerializer
-        return super(AdminBookingModelViewSet, self).get_serializer_class()
-
-    def get_queryset(self):
-        return super(AdminBookingModelViewSet, self).get_queryset().filter(
-            company=self.company
-        )
 
     def create(self, request, *args, **kwargs):
         super(AdminBookingModelViewSet, self).create(request, *args, **kwargs)

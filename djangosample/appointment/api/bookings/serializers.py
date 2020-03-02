@@ -54,31 +54,12 @@ class ServicesBookingSerializer(serializers.ModelSerializer):
     def get_send_sms(self, obj):
         return obj.get_send_sms_url(self.context.get('request'))
 
-    def validate_service(self, value):
-        company = self.context.get("company")
-        if not company == value.company:
-            raise serializers.ValidationError("Service does not exist.", code="incoherent_service")
-        return value
+        
+        #############
+        # TRUNCATED #
+        #############
 
-    def validate_booked_date_and_time(self, attrs):
-        """Check if employee has not been already booked for these date time"""
-
-        booked_date = attrs['booked_date']
-        employee = attrs['employee']
-        start_time = attrs['start_time']
-        # check if accept_booking_prior value is met
-        booked_dt = datetime.combine(booked_date, get_time_from_str(start_time))
-        td = (booked_dt - datetime.now())
-        td_hours = td.days * 24 + td.seconds // 3600
-        conf = Configuration.objects.get_or_create(company=employee.company)[0]
-        if td_hours < conf.accept_bookings_prior:
-            raise serializers.ValidationError({
-                "start_time": "Please choose a time later than {} hours from now".format(
-                    conf.accept_bookings_prior
-                )
-            }, code="too_soon")
-        if td_hours > conf.accept_booking_prior_days * 24:
-            raise serializers.ValidationError({
+          raise serializers.ValidationError({
                 "booked_date": "We don't accept bookings prior {} days".format(
                     conf.accept_booking_prior_days
                 )

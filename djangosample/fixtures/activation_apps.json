@@ -1,0 +1,110 @@
+[
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 1,
+    "fields": {
+      "linked_app_name": "appointment",
+      "featured": false,
+      "categories": [1, 2]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 2,
+    "fields": {
+      "linked_app_name": "shoppingcart",
+      "featured": false,
+      "categories": [3]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 3,
+    "fields": {
+      "linked_app_name": "emails",
+      "featured": false,
+      "categories": []
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 4,
+    "fields": {
+      "linked_app_name": "invoicemanager",
+      "featured": false,
+      "categories": [1, 4, 5]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 5,
+    "fields": {
+      "linked_app_name": "hotel_booking",
+      "featured": false,
+      "categories": [3, 6]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 6,
+    "fields": {
+      "linked_app_name": "cleaning",
+      "featured": false,
+      "categories": [1, 4, 5]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 7,
+    "fields": {
+      "linked_app_name": "food_delivery",
+      "featured": false,
+      "categories": [2, 5]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 8,
+    "fields": {
+      "linked_app_name": "crm",
+      "featured": false,
+      "categories": [1, 6]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 9,
+    "fields": {
+      "linked_app_name": "newsletter",
+      "featured": false,
+      "categories": [4, 5]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 10,
+    "fields": {
+      "linked_app_name": "class_scheduling",
+      "featured": false,
+      "categories": [2, 3, 5]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 11,
+    "fields": {
+      "linked_app_name": "cloudphone",
+      "featured": false,
+      "categories": [4, 6]
+    }
+  },
+  {
+    "model": "accounts.activatedapplication",
+    "pk": 12,
+    "fields": {
+      "linked_app_name": "formbuilder",
+      "featured": false,
+      "categories": [4, 6]
+    }
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {"model": "accounts.applicationcategory", "pk": 1, "fields": {"name": "Finance", "priority": 4}},
+  {"model": "accounts.applicationcategory", "pk": 2, "fields": {"name": "Marketing", "priority": 4}},
+  {"model": "accounts.applicationcategory", "pk": 3, "fields": {"name": "Communication", "priority": 3}},
+  {"model": "accounts.applicationcategory", "pk": 4, "fields": {"name": "Management", "priority": 3}},
+  {"model": "accounts.applicationcategory", "pk": 5, "fields": {"name": "Sales", "priority": 2}},
+  {"model": "accounts.applicationcategory", "pk": 6, "fields": {"name": "Collaboration", "priority": 2}}
+]

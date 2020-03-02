@@ -1,0 +1,26 @@
+[
+  {
+    "model": "django_mail_admin.mailbox",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "name": "anish.ssss",
+      "uri": "imap+ssl://anish.s@...",
+      "from_email": null,
+      "active": true,
+      "last_polling": "2018-10-24T20:17:56.406Z"
+    }
+  },
+  {
+    "model": "django_mail_admin.mailbox",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "name": "anish.unified234",
+      "uri": "imap+ssl://anish.unified234....com",
+      "from_email": null,
+      "active": true,
+      "last_polling": null
+    }
+  }
+]

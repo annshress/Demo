@@ -1,0 +1,24 @@
+[
+  {
+    "model": "django_mail_admin.outbox",
+    "pk": 1,
+    "fields": {
+      "name": "anish.ssss",
+      "email_use_tls": true,
+      "email_use_ssl": false,
+      "email_ssl_keyfile": null,
+      "email_ssl_certfile": null,
+      "email_host": "smtp-mail.outlook.com",
+              
+      #############
+      # TRUNCATED #
+      #############
+
+
+      "email_port": 465,
+      "email_timeout": null,
+      "active": false,
+      "user": 2
+    }
+  }
+]

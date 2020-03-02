@@ -1,0 +1,155 @@
+[
+  {
+    "model": "accounts.widget",
+    "pk": 1,
+    "fields": {
+      "application": 1,
+      "name": "Upcoming Bookings",
+      "slug": "appointment:dashboard_upcoming"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 2,
+    "fields": {
+      "application": 1,
+      "name": "All Bookings",
+      "slug": "appointment:dashboard_allbookings"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 3,
+    "fields": {
+      "application": 1,
+      "name": "Latest Bookings",
+      "slug": "appointment:dashboard_latest"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 4,
+    "fields": {
+      "application": 1,
+      "name": "Today Bookings",
+      "slug": "appointment:dashboard_today"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 5,
+    "fields": {
+      "application": 1,
+      "name": "Live Insight",
+      "slug": "appointment:dashboard_liveinsight"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 6,
+    "fields": {
+      "application": 8,
+      "name": "Accounts",
+      "slug": "crm:widget_crm_accounts"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 7,
+    "fields": {
+      "application": 8,
+      "name": "Contacts",
+      "slug": "crm:widget_crm_contacts"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 8,
+    "fields": {
+      "application": 8,
+      "name": "Leads",
+      "slug": "crm:widget_crm_leads"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 9,
+    "fields": {
+      "application": 8,
+      "name": "Opportunitites",
+      "slug": "crm:widget_crm_opportunities"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 10,
+    "fields": {
+      "application": 8,
+      "name": "Open Accounts",
+      "slug": "crm:widget_crm_open_accounts"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 11,
+    "fields": {
+      "application": 8,
+      "name": "Open Opportunities",
+      "slug": "crm:widget_crm_open_opportunities"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 12,
+    "fields": {
+      "application": 8,
+      "name": "Crm Feeds",
+      "slug": "crm:crm_feed"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 13,
+    "fields": {
+      "application": 1,
+      "name": "Appointment Feeds",
+      "slug": "crm:appointment_feed"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 14,
+    "fields": {
+      "application": 8,
+      "name": "Live Insight",
+      "slug": "crm:widget_crm_live_insight"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 15,
+    "fields": {
+      "application": null,
+      "name": "Appointment Scheduler",
+      "slug": "appointment:dashboard_new_bookings"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 16,
+    "fields": {
+      "application": null,
+      "name": "CRM",
+      "slug": "crm:dashboard_open_opportunities"
+    }
+  },
+  {
+    "model": "accounts.widget",
+    "pk": 17,
+    "fields": {
+      "application": null,
+      "name": "Live Insight",
+      "slug": "company:live_insight"
+    }
+  }
+]
